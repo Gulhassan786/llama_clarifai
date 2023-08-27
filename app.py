@@ -21,7 +21,7 @@ with st.sidebar:
 # Function to Generate Response
 
 def generate(text):
-    llm = Clarifai(pat=clarifai_pat, user_id='meta', app_id='Llama-2', model_id='llama2-70b-chat')
+    llm = Clarifai(pat=clarifai_pat, user_id='meta', app_id='Llama-2', model_id='llama2-13b-chat')
     st.info(llm(text))
 
 # Form that takes text as imput and return the response from the Model
